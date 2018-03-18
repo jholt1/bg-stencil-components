@@ -1,6 +1,6 @@
 {
   "name": "bg-stencil-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Stencil Component Starter",
   "main": "dist/bg-stencil-components.js",
   "types": "dist/types/index.d.ts",
