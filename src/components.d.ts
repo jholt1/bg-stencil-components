@@ -20,31 +20,31 @@ declare global {
 
 
 import {
-  MyComponent as MyComponent
-} from './components/my-component/my-component';
+  BgStencilButton as BgStencilButton
+} from './components/bg-stencil-button/bg-stencil-button';
 
 declare global {
-  interface HTMLMyComponentElement extends MyComponent, HTMLStencilElement {
+  interface HTMLBgStencilButtonElement extends BgStencilButton, HTMLStencilElement {
   }
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLBgStencilButtonElement: {
+    prototype: HTMLBgStencilButtonElement;
+    new (): HTMLBgStencilButtonElement;
   };
   interface HTMLElementTagNameMap {
-    "my-component": HTMLMyComponentElement;
+    "bg-stencil-button": HTMLBgStencilButtonElement;
   }
   interface ElementTagNameMap {
-    "my-component": HTMLMyComponentElement;
+    "bg-stencil-button": HTMLBgStencilButtonElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "my-component": JSXElements.MyComponentAttributes;
+      "bg-stencil-button": JSXElements.BgStencilButtonAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      first?: string;
-      last?: string;
+    export interface BgStencilButtonAttributes extends HTMLAttributes {
+      className?: string;
+      text?: string;
     }
   }
 }

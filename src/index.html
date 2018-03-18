@@ -4,12 +4,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
-  <script src="/build/mycomponent.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="/build/bg-stencil-components.js"></script>
+  
+  <style>
+    body {
+        font-family: 'Roboto', 'Noto', sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding: 24px;
+        background-color: #fafafa;
+    }
+    .component-box {
+      margin-bottom: 50px
+    }
+    .centered {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .code > pre {
+      margin: 0;
+      padding: 0 0 10px 0;
+  }
+  </style>
 
 </head>
 <body>
+  <div class="container">
+      <div class="row component-box">
+        <div class="col-md-12">
+            <h3>Basic bg-stencil-button demo</h3>
+        </div>
+        <div class="col-md-12">
+            <bg-stencil-button 
+              id="myBgButton"
+              text="&gt;Do NOT Click Me!"
+              className="btn btn-primary"
+              onClick="onClickHandler(this);" >
+            </bg-stencil-button>
+        </div>
+      </div>
+  </div>
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+ 
 
+  <script>
+    var onClickHandler = function myClick(e){
+      console.info('target is:', e);
+    }
+  </script>
 </body>
 </html>

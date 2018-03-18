@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'mycomponent',
+  namespace: 'bg-stencil-components',
   generateDistribution: true,
   serviceWorker: false
 };

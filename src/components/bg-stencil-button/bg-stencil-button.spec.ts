@@ -1,7 +1,7 @@
 import { flush, render } from '@stencil/core/testing';
-import { MyComponent } from './my-component';
+import { MyComponent } from './bg-stencil-button';
 
-describe('my-component', () => {
+describe('bg-stencil-button', () => {
   it('should build', () => {
     expect(new MyComponent()).toBeTruthy();
   });
@@ -11,7 +11,7 @@ describe('my-component', () => {
     beforeEach(async () => {
       element = await render({
         components: [MyComponent],
-        html: '<my-component></my-component>'
+        html: '<bg-stencil-button></bg-stencil-button>'
       });
     });
 
