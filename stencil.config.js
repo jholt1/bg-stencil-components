@@ -1,7 +1,9 @@
 exports.config = {
   namespace: 'bg-stencil-components',
   generateDistribution: true,
-  serviceWorker: false
+  serviceWorker: false,
+  generateWWW: false,
+  bundles: [{ components: ['bg-stencil-button'] }]
 };
 
 exports.devServer = {
