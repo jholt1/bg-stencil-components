@@ -1,5 +1,5 @@
 {
-  "name": "my-component",
+  "name": "bg-stencil-components",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/bg-stencil-components.js",
@@ -8,7 +8,7 @@
   "files": [
     "dist/"
   ],
-  "browser": "dist/mycomponent.js",
+  "browser": "dist/bg-stencil-components.js",
   "scripts": {
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
