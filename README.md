@@ -7,3 +7,8 @@ Stencil is also great for building entire apps. For that, use the [stencil-app-s
 
 ## Using this component
 
+Example usage:-
+~~~~
+<bg-button id="myBgButton" text=">Do NOT Click Me!" classname="btn btn-primary" onclick="onClickHandler(this);">
+</bg-button>
+~~~~
