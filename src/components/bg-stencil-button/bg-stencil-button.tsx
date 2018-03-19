@@ -18,12 +18,13 @@ export class BgStencilButton {
   }
 
   render() {
+    const classNames = `btn btn-primary {this.className}`;
     return (
       <div>
         <button
           id="myButton"
           type="button" 
-          class="btn btn-primary"
+          class={classNames}
         >
           {this.text}
         </button>
